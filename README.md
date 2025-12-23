@@ -34,12 +34,14 @@ This project uses **Poetry**.
 poetry install
 ---
 
-2) Run the app
+### 2) Run the app
 poetry run phoenixlit run -c config.yaml
 
 You will be prompted for a PIN (see auth section in the config).
 
-3) Collect gesture samples
+---
+
+### 3) Collect gesture samples
 poetry run phoenixlit collect-gesture -c config.yaml
 
 Keyboard mapping during collection (default):
@@ -61,7 +63,8 @@ q or ESC = quit
 Samples are saved to data/gesture/ by default.
 
 ---
-4) Train a gesture model
+
+### 4) Train a gesture model
 poetry run phoenixlit train-gesture -c config.yaml
 
 The model is saved to models/gesture.joblib by default.
