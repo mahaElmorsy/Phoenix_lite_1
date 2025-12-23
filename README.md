@@ -5,6 +5,7 @@ It is an early MVP for a broader vision: privacy-aware, human-centered assistive
 
 > Status: **Research / MVP prototype** (not production, not safety-critical)
 
+> I evaluated the baseline model using standard classification metrics (eg precision/recall) and iteratively reduced false positives through threshold tuning and data refinement.
 ---
 
 ## What it does
@@ -32,7 +33,6 @@ This project uses **Poetry**.
 
 ```bash
 poetry install
-
 ```
 ### 2) Run the app
 ```bash

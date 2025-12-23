@@ -27,3 +27,4 @@ signals_tracked/
 data/auth/pin.json
 data/auth/failed.txt
 data/**/.DS_Store
+/data/
