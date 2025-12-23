@@ -64,7 +64,6 @@ poetry run phoenixlit train-gesture -c config.yaml
 ```
 The model is saved to models/gesture.joblib by default.
 ---
-
 ## Outputs
 
 During/after runs, Phoenix-Lite writes artifacts to local folders (paths can vary by config):
