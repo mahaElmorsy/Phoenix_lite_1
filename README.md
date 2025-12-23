@@ -32,7 +32,7 @@ This project uses **Poetry**.
 
 ```bash
 poetry install
----
+
 ```
 ### 2) Run the app
 ```bash
