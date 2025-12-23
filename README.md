@@ -33,38 +33,46 @@ This project uses **Poetry**.
 ```bash
 poetry install
 ---
-
-2) Run the app
+```
+### 2) Run the app
+```bash
 poetry run phoenixlit run -c config.yaml
-
-You will be prompted for a PIN (see auth section in the config).
-
-3) Collect gesture samples
+```
+You will be asked for a PIN (check auth section in the config).
+---
+### 3) Collect gesture samples
+```bash
 poetry run phoenixlit collect-gesture -c config.yaml
-
+```
 Keyboard mapping during collection (default):
 
-1 = STOP
+- `1` = STOP  
+- `2` = YES  
+- `3` = NO  
+- `4` = PAIN  
+- `0` = NONE  
+- `SPACE` = save current label (requires buffer to be full)  
+- `q` or `ESC` = quit
 
-2 = YES
-
-3 = NO
-
-4 = PAIN
-
-0 = NONE
-
-SPACE = save current label (requires buffer to be full)
-
-q or ESC = quit
-
-Samples are saved to data/gesture/ by default.
+Samples are saved to `data/gesture/` by default.
 
 ---
-4) Train a gesture model
+
+### 4) Train a gesture model
+```bash
 poetry run phoenixlit train-gesture -c config.yaml
-
+```
 The model is saved to models/gesture.joblib by default.
+---
+
+## Outputs
+
+During/after runs, Phoenix-Lite writes artifacts to local folders (paths can vary by config):
+
+- `data/gesture/` — collected `.npz` samples for training
+- `models/` — trained model files (e.g., `gesture.joblib`)
+- `signals_tracked/` — session logs (JSON) and summary plots
 
 ---
+
 
